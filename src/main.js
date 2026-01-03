@@ -1,27 +1,34 @@
 import './style.css'
-// 1. Importamos los componentes
 import { Header } from './components/layout/Header.js';
 import { Footer } from './components/layout/Footer.js';
-// 2. Definimos dónde vamos a renderizar
+// 1. Importamos el Hero y su Lógica
+import { Hero, initHeroLogic } from './components/home/Hero.js';
+
 const app = document.querySelector('#app');
 
-// 3. Inyectamos el HTML (Renderizado)
+// 2. Renderizamos (Ahora incluimos ${Hero()})
 app.innerHTML = `
   ${Header()}
-  <main id="contenido-principal" class="pt-20">
-    <div class="h-screen flex items-center justify-center bg-gray-100">
-      <h1 class="text-2xl text-gray-400">Pronto: Banner Principal...</h1>
+  <main id="contenido-principal">
+    ${Hero()} 
+    
+    <div class="py-20 text-center bg-gray-50">
+      <h2 class="text-3xl font-bold text-gray-800">Próximamente: Más secciones...</h2>
     </div>
-  </main>
-${Footer()} `;
 
-// 4. Lógica de interactividad (Después de renderizar)
-// Activamos el menú móvil después de que el HTML ya existe en el DOM
+  </main>
+  ${Footer()} 
+`;
+
+// 3. Activamos la interactividad
+// Menú Móvil
 const btnMenu = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
-
 if(btnMenu && mobileMenu) {
   btnMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
 }
+
+// Inicializar el Carrusel del Hero
+initHeroLogic();
