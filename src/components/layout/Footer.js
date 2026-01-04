@@ -15,28 +15,31 @@ export const Footer = () => {
       </div>
 
       <div>
-        <h3 class="text-brand-purple font-bold text-lg mb-4">Servicios</h3>
+        <h3 class="font-bold text-lg mb-4 text-[#4c3b93]">Servicios</h3>
         <ul class="space-y-2 text-sm text-gray-600">
-          <li><a href="#" class="hover:text-brand-purple transition">Examen Médico Ocupacional</a></li>
-          <li><a href="#" class="hover:text-brand-purple transition">Examen para Licencias de Conducir</a></li>
-          <li><a href="#" class="hover:text-brand-purple transition">Examen de Sucamec</a></li>
-          <li><a href="#" class="hover:text-brand-purple transition">Escuela de conductores</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Examen Médico Ocupacional</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Examen para Licencias de Conducir</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Examen de Sucamec</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Escuela de conductores</a></li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-brand-purple font-bold text-lg mb-4">Legal</h3>
+        <h3 class="font-bold text-lg mb-4 text-[#4c3b93]">Legal</h3>
         <ul class="space-y-2 text-sm text-gray-600">
-          <li><a href="#" class="hover:text-brand-purple transition">Política de Privacidad</a></li>
-          <li><a href="#" class="hover:text-brand-purple transition">Términos y Condiciones</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Política de Privacidad</a></li>
+          <li><a href="#" class="hover:text-[#4c3b93] transition">Términos y Condiciones</a></li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-brand-purple font-bold text-lg mb-4">Contactos</h3>
+        <h3 class="font-bold text-lg mb-4 text-[#4c3b93]">Contactos</h3>
         
         <div class="flex items-start gap-3 mb-4">
-          <img src="https://www.gstatic.com/images/branding/product/2x/maps_2020q4_48dp.png" class="w-6 h-6 flex-shrink-0" alt="Google Maps">
+          <svg class="w-6 h-6 flex-shrink-0 mt-1" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path fill="#4285F4" d="M18.5 25.5C18.5 25.5 18.5 25.5 18.5 25.5L18.5 25.5S25.364 36.3636 25.364 36.3636S32.227 25.5 32.227 25.5C32.227 25.5 32.227 25.5 32.227 25.5L32.227 25.5C34.619 21.912 36 17.618 36 13C36 5.82 30.18 0 23 0S10 5.82 10 13C10 17.618 11.381 21.912 13.773 25.5L13.773 25.5C13.773 25.5 13.773 25.5 13.773 25.5L18.5 25.5Z" transform="translate(-3 3)"/>
+             <circle cx="20" cy="16" r="5" fill="#1967D2"/>
+          </svg>
           <p class="text-xs text-gray-600">
             Av. 9 de Octubre 467,<br>San Juan de Lurigancho
           </p>
@@ -56,19 +59,19 @@ export const Footer = () => {
 
     <div class="bg-gray-200 rounded-lg py-3 px-6 w-full relative flex flex-col md:flex-row items-center justify-center">
       
-      <div class="flex items-center gap-4 mb-2 md:mb-0 md:absolute md:left-6">
+      <div class="flex items-center gap-4 mb-4 md:mb-0 md:absolute md:left-6">
         
         <a href="#" class="hover:scale-110 transition">
-          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="12" fill="#1877F2"/>
             <path d="M14 19.5v-6h2l.5-2.5h-2.5v-1.5c0-.6.2-1 .9-1h1.1V6.3c-.2 0-.9-.1-1.7-.1-1.7 0-2.9 1-2.9 3v1.8H9v2.5h1.9v6h3.1z" fill="white"/>
           </svg>
         </a>
 
         <a href="#" class="hover:scale-110 transition">
-           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
              <defs>
-               <linearGradient id="instaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+               <linearGradient id="instaGradOficial" x1="0%" y1="0%" x2="100%" y2="100%">
                  <stop offset="0%" style="stop-color:#f09433;stop-opacity:1" />
                  <stop offset="25%" style="stop-color:#e6683c;stop-opacity:1" />
                  <stop offset="50%" style="stop-color:#dc2743;stop-opacity:1" />
@@ -76,15 +79,19 @@ export const Footer = () => {
                  <stop offset="100%" style="stop-color:#bc1888;stop-opacity:1" />
                </linearGradient>
              </defs>
-             <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#instaGrad)"/>
+             <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#instaGradOficial)"/>
              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="white"/>
              <circle cx="17" cy="7" r="1.2" fill="white"/>
            </svg>
         </a>
 
         <a href="#" class="hover:scale-110 transition">
-          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 2L12 10.8 4.4 6h15.2zM4 18V8l8 5 8-5v10H4z" fill="#EA4335"/>
+          <svg class="w-8 h-8" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#EA4335" d="M24 24L45 10.8V38H33V24L24 30.6L15 24V38H3V10.8L24 24Z"/>
+            <path fill="#4285F4" d="M3 10.8L24 24L45 10.8V8C45 5.8 43.2 4 41 4H7C4.8 4 3 5.8 3 8V10.8Z"/>
+            <path fill="#34A853" d="M33 38H41C43.2 38 45 36.2 45 34V10.8L24 24L33 30.6V38Z"/>
+            <path fill="#FBBC04" d="M3 34C3 36.2 4.8 38 7 38H15V30.6L24 24L3 10.8V34Z"/>
+            <path fill="#EA4335" d="M45 10.8L24 24L3 10.8V8C3 6.9 3.5 6 4.3 5.4L24 18.2L43.7 5.4C44.5 6 45 6.9 45 8V10.8Z"/>
           </svg>
         </a>
       </div>
