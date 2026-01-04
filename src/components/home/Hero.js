@@ -16,7 +16,7 @@ export const Hero = () => {
     stats.forEach(el => {
       const target = +el.getAttribute('data-target');
       let current = 0;
-      const step = target / 40;
+      const step = target / 140;
       const update = () => {
         current += step;
         if (current < target) {
