@@ -5,63 +5,74 @@
 
 /* 1. FONDO: Nace exactamente debajo del header */
 .hero-bg-fix {
-  position: absolute;
-  top: 85px; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
 }
 
 /* 2. FILTRO DOBLE: Ángulos de Figma (111° y -66°) */
 .bg-autovias-double-filter {
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  pointer-events: none;
-  background: 
-    linear-gradient(111deg, rgba(59, 188, 168, 0.176) 24%, rgba(255, 251, 251, 0.2) 81%),
-    linear-gradient(-66deg, rgba(59, 188, 168, 0.582) 32%, rgba(238, 249, 247, 0.6) 81%);
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg, rgba(59, 188, 168, 0.9) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(59, 188, 168, 0.9) 100%);
 }
 
 /* 3. EFECTO DE BOTÓN: Se agranda al pasar el mouse */
 .action-card-btn {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
 }
+
 .action-card-btn:hover {
-  transform: scale(1.08); 
-  box-shadow: 10px 10px 15px rgba(46, 26, 95, 0.35);
+    transform: scale(1.08);
+    box-shadow: 10px 10px 15px rgba(46, 26, 95, 0.35);
 }
 
 /* 4. SOMBRA MORADA DURA (5, 5, 5, #2E1A5F) */
 .shadow-hard-purple {
-  box-shadow: 5px 5px 5px #2E1A5F;
+    box-shadow: 5px 5px 5px #2E1A5F;
 }
 
 /* 5. INTERCALADO Y ANIMACIÓN */
 .card-staggered:nth-child(even) {
-  margin-top: 3.5rem; 
+    margin-top: 3.5rem;
 }
 
 @keyframes fadeInUpHero {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 .animate-hero-item {
-  opacity: 0;
-  animation: fadeInUpHero 0.8s ease-out forwards;
+    opacity: 0;
+    animation: fadeInUpHero 0.8s ease-out forwards;
 }
 
 /* 6. WHATSAPP FLOTANTE */
 .whatsapp-fixed {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-  transition: transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    transition: transform 0.3s ease;
 }
-.whatsapp-fixed:hover { transform: scale(1.2); }
+
+.whatsapp-fixed:hover {
+    transform: scale(1.2);
+}
 
 
 
@@ -69,42 +80,44 @@
 
 /* 1. FONDO: Empieza exactamente debajo del header */
 .hero-bg-fix {
-  position: absolute;
-  top: 90px; /* Ajuste para el alto de tu header */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0; /* Al fondo de todo */
-}
-
-/* 2. FILTRO: Encima de la imagen pero detrás del texto */
-.bg-autovias-double-filter {
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  pointer-events: none;
-  background: 
-    linear-gradient(111deg, rgba(59, 188, 168, 0.176) 24%, rgba(255, 251, 251, 0.2) 81%),
-    linear-gradient(-66deg, rgba(59, 188, 168, 0.582) 32%, rgba(238, 249, 247, 0.6) 81%);
+    position: absolute;
+    top: 90px;
+    /* Ajuste para el alto de tu header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    /* Al fondo de todo */
 }
 
 /* 3. ANIMACIÓN SEGURA: No usa opacity 0 al inicio para evitar que desaparezca */
 @keyframes fadeInUpHero {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+
 .animate-hero-item {
-  animation: fadeInUpHero 0.8s ease-out forwards;
+    animation: fadeInUpHero 0.8s ease-out forwards;
 }
 
 /* 4. SOMBRA Y BOTONES */
-.shadow-hard-purple { box-shadow: 5px 5px 5px #2E1A5F; }
+.shadow-hard-purple {
+    box-shadow: 5px 5px 5px #2E1A5F;
+}
 
 .action-card-btn {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
 }
+
 .action-card-btn:hover {
-  transform: scale(1.08);
-  box-shadow: 10px 10px 15px rgba(46, 26, 95, 0.35);
+    transform: scale(1.08);
+    box-shadow: 10px 10px 15px rgba(46, 26, 95, 0.35);
 }
