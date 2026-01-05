@@ -20,7 +20,7 @@ export const Header = () => {
               <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
 
-            <a href="#faq" class="text-gray-500 hover:text-brand-purple font-medium text-lg transition flex items-center gap-1">
+            <a href="#preguntas-frecuentes" class="text-gray-500 hover:text-brand-purple font-medium text-lg transition flex items-center gap-1">
               Preguntas Frecuentes
               <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
@@ -51,7 +51,7 @@ export const Header = () => {
           <a href="#inicio" class="block px-3 py-2 text-brand-purple font-bold bg-gray-50 rounded-md text-lg">Inicio</a>
           <a href="#nosotros" class="block px-3 py-2 text-gray-600 hover:text-brand-purple font-medium text-lg">Nosotros</a>
           <a href="#servicios" class="block px-3 py-2 text-gray-600 hover:text-brand-purple font-medium text-lg">Nuestro Servicios</a>
-          <a href="#faq" class="block px-3 py-2 text-gray-600 hover:text-brand-purple font-medium text-lg">Preguntas Frecuentes</a>
+          <a href="#preguntas-frecuentes" class="block px-3 py-2 text-gray-600 hover:text-brand-purple font-medium text-lg">Preguntas Frecuentes</a>
           <a href="#blog" class="block px-3 py-2 text-gray-600 hover:text-brand-purple font-medium text-lg">Nuestro Blog</a>
           <div class="grid grid-cols-1 gap-3 mt-4 border-t pt-4">
             <a href="#cotiza" class="text-center bg-brand-dark text-white py-3 rounded-md font-bold text-lg">COTIZA</a>
