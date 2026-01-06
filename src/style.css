@@ -121,3 +121,26 @@
     transform: scale(1.08);
     box-shadow: 10px 10px 15px rgba(46, 26, 95, 0.35);
 }
+
+/* 5. VALORES: Tarjetas con forma elíptica */
+.valor-card {
+    width: 100%;
+    aspect-ratio: 542/698;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.valor-clip-1 {
+    clip-path: url(#valorClip1);
+}
+
+.valor-clip-2 {
+    clip-path: url(#valorClip2);
+}
+
+.valor-clip-3 {
+    clip-path: url(#valorClip3);
+}

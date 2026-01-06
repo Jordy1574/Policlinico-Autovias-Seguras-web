@@ -4,6 +4,7 @@ import { Hero } from './components/home/Hero.js';
 import { PreguntasFrecuentes } from './components/sections/Preguntas Frecuentes.js';
 import { NuestrosServicios } from './components/sections/Nuestros Servicios.js';
 import { Footer } from './components/layout/Footer.js';
+import { Nosotros } from './components/sections/Nosotros.js';
 
 const app = document.querySelector('#app');
 
@@ -14,6 +15,15 @@ function renderPage() {
   let content = '';
   
   switch(hash) {
+    case '#nosotros':
+      content = `
+        ${Header()}
+        <main class="pt-24">
+          ${Nosotros()}
+        </main>
+        ${Footer()}
+      `;
+      break;
     case '#servicios':
       content = `
         ${Header()}
